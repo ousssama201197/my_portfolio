@@ -1,7 +1,7 @@
 export const profile = {
-  name: "Oussama Oma",
+  name: "Oussama Mameche",
   firstName: "Oussama",
-  lastName: "Oma",
+  lastName: "Mameche",
   initials: "OO",
   title: "Backend Engineer",
   tagline:
