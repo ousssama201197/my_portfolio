@@ -1,31 +1,25 @@
-'use client'
+import { SiteHeader } from "@/components/portfolio/site-header";
+import { Hero } from "@/components/portfolio/hero";
+import { About } from "@/components/portfolio/about";
+import { Skills } from "@/components/portfolio/skills";
+import { Experience } from "@/components/portfolio/experience";
+import { Projects } from "@/components/portfolio/projects";
+import { Contact } from "@/components/portfolio/contact";
+import { SiteFooter } from "@/components/portfolio/site-footer";
 
 export default function Home() {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '100vh',
-      gap: '2rem',
-      padding: '1rem'
-    }}>
-      <div style={{
-        position: 'relative',
-        width: '6rem',
-        height: '6rem'
-      }}>
-        <img
-          src="/logo.svg"
-          alt="Z.ai Logo"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'contain'
-          }}
-        />
-      </div>
+    <div className="flex min-h-screen flex-col bg-background text-foreground">
+      <SiteHeader />
+      <main className="flex-1">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <SiteFooter />
     </div>
-  )
+  );
 }
